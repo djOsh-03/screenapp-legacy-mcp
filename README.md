@@ -20,6 +20,13 @@ put in the MCP client configuration, and no ScreenApp AI-generation tool is expo
 > OpenAI product. ScreenApp's current supported MCP endpoint is
 > `https://screenapp.io/app/api/mcp`. Try that first for current workspaces.
 
+>  [!Disclosure]
+>  A little obvious - I created this fix using Codex to solve the issues I personally experienced. Hpoe it helps some other punters.
+> I have a paid ScreenApp subscription, the product is ok, a bit clunky definitely more features I'd love for my use case - may get to writing these down?
+> Let me know what your experience is like.
+>
+> I'm sporadic using this account. Send through any issues and I'll try to be responsive - not setting any expectations.
+
 ## What this fixes
 
 The failure is not one single bug. It is a compatibility gap between two generations
