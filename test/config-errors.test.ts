@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { resolve } from "node:path";
 
 import { loadConfig } from "../src/config.js";
 import { createCredentialStore } from "../src/auth/manager.js";
@@ -13,7 +14,9 @@ describe("configuration and safe errors", () => {
       SCREENAPP_ACCESS_TOKEN: "  access-value  ",
     });
     expect(config.credentialStore).toBe("file");
-    expect(config.credentialsFile).toBe("/tmp/screenapp-test-credentials.json");
+    expect(config.credentialsFile).toBe(
+      resolve("/tmp/screenapp-test-credentials.json"),
+    );
     expect(config.accessToken).toBe("access-value");
     expect(config.mcpUrl.toString()).toBe(
       "https://api.screenapp.io/v2/mcp/sse",

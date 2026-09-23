@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented here.
 
+## [0.1.1] - 2026-09-23
+
+### Fixed
+
+- Made the credentials-path test portable across Windows, macOS, and Linux so the full
+  public CI matrix passes.
+
 ## [0.1.0] - 2026-09-23
 
 ### Added

@@ -17,7 +17,7 @@ const childEnvironment = Object.fromEntries(
   ),
 );
 const serverPath = fileURLToPath(new URL("../dist/cli.js", import.meta.url));
-const client = new Client({ name: "screenapp-live-smoke", version: "0.1.0" });
+const client = new Client({ name: "screenapp-live-smoke", version: "0.1.1" });
 const transport = new StdioClientTransport({
   command: process.execPath,
   args: [serverPath],

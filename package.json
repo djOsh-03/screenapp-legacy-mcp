@@ -1,6 +1,6 @@
 {
   "name": "screenapp-legacy-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A local MCP compatibility bridge for legacy ScreenApp workspaces, Codex OAuth, and stored summaries.",
   "type": "module",
   "private": true,
