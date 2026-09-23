@@ -1,0 +1,55 @@
+{
+  "name": "screenapp-legacy-mcp",
+  "version": "0.1.0",
+  "description": "A local MCP compatibility bridge for legacy ScreenApp workspaces, Codex OAuth, and stored summaries.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djOsh-03/screenapp-legacy-mcp.git"
+  },
+  "homepage": "https://github.com/djOsh-03/screenapp-legacy-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/djOsh-03/screenapp-legacy-mcp/issues"
+  },
+  "keywords": [
+    "screenapp",
+    "mcp",
+    "model-context-protocol",
+    "codex",
+    "oauth"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "screenapp-legacy-mcp": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "npm run typecheck && npm run lint && npm test && npm run build",
+    "dev": "tsx src/cli.ts",
+    "lint": "eslint .",
+    "start": "node dist/cli.js",
+    "test": "vitest run --coverage",
+    "test:live": "tsx scripts/live-smoke.ts",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.0.0",
+    "@modelcontextprotocol/server": "2.0.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "26.6.2",
+    "@vitest/coverage-v8": "5.0.1",
+    "eslint": "10.0.1",
+    "tsx": "4.23.15",
+    "typescript": "6.0.2",
+    "typescript-eslint": "8.70.1",
+    "vitest": "5.0.1"
+  }
+}
